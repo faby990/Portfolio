@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabiany Evellyn | Portfólio de Desenvolvimento</title>
+  <meta name="description" content="Portfólio de Fabiany Evellyn: back-end, front-end e banco de dados.">
+
+  <!-- Fontes do Google (se ficar sem internet, o navegador usa as fontes reserva do CSS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="topo">
+
+  <!-- Link para quem usa teclado pular direto para o conteúdo -->
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== CABEÇALHO: logo + menu ===== -->
+  <header class="cabecalho">
+    <div class="cabecalho__interno">
+      <a class="logo" href="#topo" aria-label="Fabiany Evellyn, voltar ao início">
+        <span aria-hidden="true">✦</span> Fabiany Evellyn
+      </a>
+
+      <!-- Botão hambúrguer: só aparece no celular -->
+      <button class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span class="btn-menu__linha"></span>
+        <span class="btn-menu__linha"></span>
+        <span class="btn-menu__linha"></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <!-- Botão do modo claro/escuro -->
+        <button class="btn-tema" id="btn-tema" aria-label="Ativar modo escuro" aria-pressed="false">
+          <span id="icone-tema" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== INÍCIO ===== -->
+    <section id="inicio" class="secao inicio" aria-labelledby="titulo-inicio">
+      <span class="estrela e1" aria-hidden="true">✦</span>
+      <span class="estrela e2" aria-hidden="true">✦</span>
+
+      <div class="inicio__grade conteiner">
+        <figure class="avatar">
+          <img src="img/foto-perfil.jpg" alt="Foto de perfil de Fabiany Evellyn">
+          <!-- Selo decorativo sobre a foto -->
+          <span class="selo" aria-hidden="true">✦<br>Em busca<br>de estágio!</span>
+        </figure>
+
+        <div class="inicio__texto">
+          <!-- A saudação é trocada pelo JavaScript (bom dia, boa tarde ou boa noite) -->
+          <p class="saudacao" id="saudacao">Olá, eu sou</p>
+          <h1 id="titulo-inicio">Fabiany  
+            <span class="sr-only">Portfólio</span>
+          </h1>
+          <p class="nome"><strong>Portfólio</strong></p>
+          <p class="intro">
+            Estudante de tecnologia que gosta de construir sistemas completos,
+            da tela até o banco de dados.
+          </p>
+          <!-- Etiquetas das áreas de atuação -->
+          <ul class="etiquetas" aria-label="Áreas de atuação">
+            <li>Back-end</li>
+            <li>Front-end</li>
+            <li>Banco de dados</li>
+          </ul>
+          <a class="botao" href="#projetos">Ver meus projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section id="sobre" class="secao alt" aria-labelledby="titulo-sobre">
+      <div class="conteiner">
+        <h2 id="titulo-sobre">Sobre mim</h2>
+        <div class="sobre__grade">
+          <div class="sobre__texto">
+          <p>
+            Sou estudante da área de tecnologia e estou me desenvolvendo como dev.
+            Gosto de entender como as coisas funcionam por trás da tela: de onde vêm os dados,
+            como eles são guardados e como chegam até a pessoa que está usando o sistema.
+          </p>
+          <p>
+            Durante o curso, criei projetos reais que me ajudaram a juntar teoria e prática.
+            Meu objetivo é conseguir uma vaga de estágio em tecnologia, onde eu possa aprender com
+            uma equipe, ganhar experiência e contribuir com o que já sei.
+          </p>
+          </div>
+
+          <!-- Cartão com os objetivos -->
+          <aside class="cartao objetivos" aria-labelledby="titulo-objetivos">
+            <h3 id="titulo-objetivos">Meus objetivos</h3>
+            <ul>
+              <li>Conquistar uma vaga de estágio em tecnologia</li>
+              <li>Aprender com uma equipe de desenvolvimento</li>
+              <li>Evoluir em back-end, front-end e banco de dados</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section id="habilidades" class="secao" aria-labelledby="titulo-habilidades">
+      <div class="conteiner">
+        <h2 id="titulo-habilidades">Minhas habilidades</h2>
+        <div class="habilidades__grade">
+
+          <article class="cartao">
+            <h3><span aria-hidden="true">✦</span> Back-end</h3>
+            <ul>
+              <li>Lógica de programação</li>
+              <li>Regras de negócio</li>
+              <li>Cadastro, consulta, edição e exclusão de dados</li>
+            </ul>
+          </article>
+
+          <article class="cartao">
+            <h3><span aria-hidden="true">✦</span> Front-end</h3>
+            <ul>
+              <li>HTML semântico</li>
+              <li>CSS e layout responsivo</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="cartao">
+            <h3><span aria-hidden="true">✦</span> Banco de dados</h3>
+            <ul>
+              <li>Modelagem de tabelas</li>
+              <li>Consultas em SQL</li>
+              <li>Organização e relação entre dados</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="secao alt" aria-labelledby="titulo-projetos">
+      <div class="conteiner">
+        <h2 id="titulo-projetos">Projetos</h2>
+        <div class="projetos__grade">
+
+          <article class="cartao cartao--projeto">
+            <h3>Desafio Cadastro</h3>
+            <p>
+              Sistema de cadastro que permite registrar pessoas, listar quem já foi cadastrado
+              e manter as informações organizadas. Treinei validação de dados e a conversa
+              entre a tela, as regras do sistema e o banco de dados.
+            </p>
+            <a class="botao botao--pequeno" href="https://github.com/faby990/Desafio.Cadastro" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub <span class="sr-only">(abre em nova aba)</span>
+            </a>
+          </article>
+
+          <article class="cartao cartao--projeto">
+            <h3>UC31 - Carrinho</h3>
+            <p>
+              Simulação de um carrinho de compras: adicionar produtos, mudar a quantidade,
+              remover itens e ver o valor total atualizado. Foi um bom exercício para
+              praticar regras de cálculo e organização do código.
+            </p>
+            <a class="botao botao--pequeno" href="https://github.com/faby990/UC31---Carrinho" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub <span class="sr-only">(abre em nova aba)</span>
+            </a>
+          </article>
+
+          <!-- TROQUE ESTE CARTÃO: o trabalho pede pelo menos 3 projetos reais.
+               Coloque aqui o título, a descrição e o link do seu terceiro projeto do curso. -->
+          <article class="cartao cartao--projeto">
+            <h3>Novo projeto</h3>
+            <p>
+              Espaço reservado para o próximo projeto do curso. Em breve ele aparece aqui.
+            </p>
+            <a class="botao botao--pequeno" href="https://github.com/faby990" target="_blank" rel="noopener noreferrer">
+              Ver meu GitHub <span class="sr-only">(abre em nova aba)</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO (sem formulário: só e-mail e GitHub) ===== -->
+    <section id="contato" class="secao" aria-labelledby="titulo-contato">
+      <div class="conteiner">
+        <h2 id="titulo-contato">Contato</h2>
+        <p class="contato__texto">Vamos conversar? Me chame por um destes canais:</p>
+        <ul class="contato__lista">
+          <li>
+            <a class="cartao cartao--contato" href="mailto:fabianyevellyn9@gmail.com">
+              <span class="contato__rotulo">E-mail</span>
+              <span class="contato__valor">fabianyevellyn9@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="cartao cartao--contato" href="https://github.com/faby990" target="_blank" rel="noopener noreferrer">
+              <span class="contato__rotulo">GitHub <span class="sr-only">(abre em nova aba)</span></span>
+              <span class="contato__valor">github.com/faby990</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="rodape">
+    <div class="rodape__interno conteiner">
+      <!-- O ano é preenchido automaticamente pelo JavaScript -->
+      <p>© <span id="ano">2026</span> Fabiany Evellyn</p>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
